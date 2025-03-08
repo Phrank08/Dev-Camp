@@ -1,29 +1,39 @@
 @media (max-width: 615px) {
-  .navigation-wrapper {
+
+  html{
+    overflow-x: none;
+  }
+  .navigation-wrapper,
+  .footer-wrapper {
     flex-direction: column;
     height: 100%;
+    font-size: .8rem;
   }
 
   .navigation-wrapper > .left-column {
     order: 2;
     margin-top: 150px;
     margin-bottom: 20px;
+    font-size: 1rem;
   }
 
   .navigation-wrapper > .center-column {
-    order: 1;
+    order: -1;
     width: 100%;
   }
 
   .navigation-wrapper > .right-column {
     order: 3;
     width: 100%;
-    margin-left: 200px;
+    margin-left: 67px;
     margin-top: 10px;
+    font-size: 1rem
   }
 
-  .link-wrapper {
+  .center-column .link-wrapper {
     flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
   }
 
   .link-wrapper > .navlink {
@@ -38,7 +48,6 @@
 
   .repeat {
     height: 800px;
-    width: 82vh;
   }
 
   .repeat > .column-wrapper {
@@ -71,12 +80,19 @@
 
 }
 
+.footer-wrapper > .center-wrapper > .link-wrapper {
+  display: flex;
+  height: 80px;
+  gap: 50px;
+  flex-direction: column;
+}
+
 .footer-wrapper > .center-wrapper > .link-wrapper > .navlink {
   margin-top: 50px;
 }
 
 .footer-wrapper {
-  height: 500px;
+  height: 580px;
 }
 
 .footer-wrapper > .center-wrapper > .copyright-wrapper {
@@ -91,6 +107,12 @@
 
 .skewed-header > .header-bg {
   background-size: 550px;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .link-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
 }
 
 .skewed-header > .skewed-header-wrapper > .skewed-header-content > .link-wrapper > .navlink {
@@ -114,7 +136,7 @@
 }
 
 .page-container > .content-wrapper > p {
- width: 480px;
+ width: 350px;
  padding-right: 50px;
 
 }
@@ -136,11 +158,12 @@
 /* Menu Media-query */
 .footer-wrapper > .center-wrapper > .phone-hours-wrapper {
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
 }
 
-.footer-wrapper {
-  height: 550px;
-}
+
  /* .footer-wrapper > .center-wrapper > .link-wrapper {
   order: 2;
 } */
@@ -188,11 +211,16 @@ margin-bottom: 0;
   text-align: center;
 }
 
-.form input {
+.form input,
+.form textarea {
   padding: 1.5rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .form textarea {
-  padding: 1.5rem 0.5rem;
+  padding-left: 1rem;
+  width: 320px;
+  height: 150px;
 }
 }
